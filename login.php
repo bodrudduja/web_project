@@ -1,5 +1,5 @@
 <?php
-	$conn=mysqli_connect('localhost','hallmanagement',"hallmanagement","hallmanagement");
+	$conn=mysqli_connect('localhost','hallmanagement',"",'hallmanagement');
 	if($conn->connect_errno>0) echo "not connected";
 	if(isset($_POST["uname"], $_POST["psw"])) 
     {     
@@ -13,7 +13,7 @@
         { 
 			$row = mysqli_fetch_array($result1);
 			session_start();
-            $_SESSION["ligin_status"]=true; 
+            $_SESSION["login_status"]=true; 
             $_SESSION["user_id"] = $row['user'];
 			$regi_no=$row['reg_no'];
 			
@@ -41,5 +41,5 @@
             echo 'The username or password is incorrect!';
         }
 	}
-	//mysqli_close($conn);
+	mysqli_close($conn);
 ?>

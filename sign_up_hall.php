@@ -1,5 +1,5 @@
 <?php
-	$conn=mysqli_connect('localhost','hallmanagement',"hallmanagement","hallmanagement");
+	$conn=mysqli_connect('localhost','hallmanagement',"","hallmanagement");
 	if($conn->connect_errno>0) echo "not connected";
 	
 	$reg=$_POST["reg"];
