@@ -1,7 +1,7 @@
  
 <?php
 	
-	$conn=mysqli_connect('localhost','hallmanagement',"","hallmanagement");
+	$conn=mysqli_connect('localhost','hallmanagement','hallmanagement',"hallmanagement");
 	if($conn->connect_errno>0) echo "not connected";
 	
     function GetImageExtension($imagetype)
