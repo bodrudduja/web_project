@@ -4,16 +4,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="profile_js.js"></script>
+
 <title>DU Hall Management System</title>
 </head>
 
-<body>
+<body >
 <div id="container">
 		<div id="header">
         	<h1><span>DU Hall Management System</span></h1>
-            <h4>user:</h4>
+            <h2 id="ff"></h2>
         </div>   
-        
+ 
         <div id="menu">
         	<ul>
             	<li class="menuitem"><a href="#">Home</a></li>
