@@ -193,6 +193,18 @@ padding-left:15px;
 padding-right:15px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {text-align: left;}
+
 #content_bottom
 {
 background-image:url(images/main_bottom.png);

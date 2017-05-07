@@ -10,7 +10,7 @@
 	{
 		header('Location: index.php');
 	}
-	$conn=mysqli_connect('localhost','hallmanagement',"hallmanagement","hallmanagement");
+	$conn=mysqli_connect('localhost','hallmanagement','hallmanagement','hallmanagement');
 	$sql = "SELECT reg_no,user FROM authentication WHERE user='".$USER."';";
 	$result = mysqli_query($conn,$sql);
 	$rowSelected = mysqli_num_rows($result);
@@ -27,7 +27,22 @@
 		{
 			$row2 = mysqli_fetch_array($result2);
 			$hall_name=$row2['hall_name'];
-			$data="User: <i>".$USER."</i><br/>Hall: <i>".$hall_name."</i>";
+			$sql3 = "SELECT tutor_id,tutor_name,hall,dept,phone FROM house_tutor WHERE hall='".$hall_name."';";
+			$result3 = mysqli_query($conn,$sql3);
+			$rowSelected3 = mysqli_num_rows($result3);
+			if($rowSelected3>0)
+			{
+				//$row3 = mysqli_fetch_array($result3);
+				$data="<tr><th>Name</th><th>Department</th><th>Phone</th></tr>";
+				while($row3 = mysqli_fetch_array($result3))
+				{	
+					$data=$data."<tr>"."<td>" . $row3['tutor_name'] . "</td>"."<td>" . $row3['dept'] . "</td>"."<td>" . $row3['phone']."</td>"."</tr>";
+}
+				
+				
+				}
+			
+			//$data="User: <i>".$USER."</i><br/>Hall: <i>".$hall_name."</i>";
 			echo $data;
 		}
 	}
