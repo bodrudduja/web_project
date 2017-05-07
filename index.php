@@ -16,11 +16,9 @@
         
         <div id="menu">
         	<ul>
-            	<li class="menuitem"><a href="index.php">Home</a></li>
-                <li class="menuitem"><a href="#">Hall</a></li>
+            	<li class="menuitem"><a href="home_process.php">Home</a></li>
                 <li class="menuitem"><a href="sign_up_hall.html">Registration</a></li>
                 <li class="menuitem"><a href="index.php">Log In</a></li>
-                <li class="menuitem"><a href="#">About</a></li>
               <li class="menuitem"><a href="#">Contact</a></li>
             </ul>
         </div>

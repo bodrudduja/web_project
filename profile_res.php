@@ -17,7 +17,7 @@
         
         <div id="menu">
         	<ul>
-            	<li class="menuitem"><a href="#">Home</a></li>
+            	<li class="menuitem"><a href=""home_process.php>Home</a></li>
 				<li class="menuitem"><a href="house_tutor_response.php">House Tutors</a></li>
 				<li class="menuitem"><a href="hall_official_response.php">Hall Officials</a></li>
 				<li class="menuitem"><a href="hall_stuff_response.php">Hall Stuffs</a></li>				

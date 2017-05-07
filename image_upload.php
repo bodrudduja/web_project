@@ -16,7 +16,7 @@
         
         <div id="menu">
         	<ul>
-            	<li class="menuitem"><a href="#">Home</a></li>
+            	<li class="menuitem"><a href="home_process.php">Home</a></li>
                 <li class="menuitem"><a href="log_out_process.php">log out</a></li>
             </ul>
         </div>
