@@ -12,7 +12,7 @@
 		header('Location: index.php');
 	}
 
-	$conn=mysqli_connect('localhost','root',"","hall_management");
+	$conn=mysqli_connect('localhost','hallmanagement','hallmanagement','hallmanagement');
 	$sql = "SELECT admin_id,hall FROM admin WHERE admin_id='".$USER."';";
 	$result = mysqli_query($conn,$sql);
 	$rowSelected = mysqli_num_rows($result);
