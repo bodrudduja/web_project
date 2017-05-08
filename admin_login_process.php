@@ -15,6 +15,7 @@
 			session_start();
             $_SESSION["ligin_status"]=true; 
             $_SESSION["user_id"] = $row['admin_id'];
+			$_SESSION["password"]=$row['password']; 
 			
 			header('Location: admin_dashboard.php');
         }
